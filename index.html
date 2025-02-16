@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+    <title>MDQuizApp</title>
+</head>
+<body>
+    
+
+        <audio id="backgroundMusic" loop>
+            <source src="game.mp3" type="audio/mpeg">
+        </audio>
+
+    <div id="FirstBox" class="FirstBox">
+
+        <h1>ARE YOU RADY?</h1>
+
+        <button onclick="OpenPlayBox()" style="background-color: #1352ff;">Play</button>
+        <button onclick="OpenCredit()" style="background-color: #eedb05;">Credit 👑</button>
+
+        <div class="deIc">
+            <span>Music:</span>
+            <i id="musicIcon" onclick="toggleMusic()" class="fa-solid fa-volume-off"></i>
+
+        </div>
+
+    </div>
+
+    <div id="creditBox" class="creditBox">
+        <i onclick="BackToHome()" class="fa-solid fa-outdent"></i>
+        <h1>MADE BY MOHAMMED</h1>
+
+        <p>
+            Welcome to our exciting quiz game! Test your knowledge across various topics and challenge yourself with fun and engaging questions. Answer correctly to earn points and see how high you can score. Are you ready to take on the challenge? Let’s play!
+        </p>
+    </div>
+
+    
+    <div id="PlayBox" class="PlayBox">
+
+        <div class="scoreOut">
+            <i onclick="BackToHome1()" class="fa-solid fa-outdent"></i>
+            <h3 id="score">0/5</h3>
+        </div>
+        <h1 id="question"></h1>
+
+        <div class="choiceBox" data-number="1">
+            <p>A</p>
+            <p>Mohammed</p>
+        </div>
+    
+        <div class="choiceBox" data-number="2">
+            <p>B</p>
+            <p>Hassan</p>
+        </div>
+    
+        <div class="choiceBox" data-number="3">
+            <p>C</p>
+            <p>Osama</p>
+        </div>
+    
+        <div class="choiceBox" data-number="4">
+            <p>D</p>
+            <p>Nabil</p>
+        </div>
+    
+        <div class="choiceBox" data-number="5">
+            <p>E</p>
+            <p>Salam</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/6a817012d4.js" crossorigin="anonymous"></script>
+</body>
+</html>
