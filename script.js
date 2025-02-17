@@ -97,7 +97,7 @@ let quastions = [
         answer: 3
     },
     {
-        quation: 'Vem är klassens 6ix9ine?',
+        quation: 'Vem är klassens DJ?',
         choice1: 'Mohammed',
         choice2: 'Hassan',
         choice3: 'Osamma',
